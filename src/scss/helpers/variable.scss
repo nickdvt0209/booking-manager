@@ -1,0 +1,17 @@
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+
+$color-primary: #ffb800;
+$color-secondary: #ff993c;
+$color-gray: #f8f9fa;
+$color-gray-300: #f9f6f4;
+$color-gray-400: #ede6e6;
+$color-gray-500: #a5a8b1;
+$color-black-200: #1e0d03;
+
+@mixin flex($align, $jus, $wrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $jus;
+  flex-wrap: $wrap;
+}

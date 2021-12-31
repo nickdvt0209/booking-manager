@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary !important;
+  font-size: 18px !important;
+  line-height: 1;
+  color: $color-black-200;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: $color-gray-300 !important;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: $font-primary;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  line-height: normal;
+  cursor: pointer;
+}
+
+input {
+  line-height: normal;
+}
+
+section[id] {
+  scroll-margin-top: 50px;
+}
+
+.container {
+  // max-width: 1920px;
+  margin: 0 auto;
+}

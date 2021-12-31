@@ -1,0 +1,12 @@
+.content-trangchu {
+  width: 80%;
+  flex-grow: 1;
+  padding: 25px;
+  background: #fff;
+  border-radius: 24px;
+  height: 510px;
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}

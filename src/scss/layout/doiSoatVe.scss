@@ -1,0 +1,81 @@
+.doisoatve {
+  width: 80%;
+  flex-grow: 1;
+  @include flex(flex-start, space-between, nowrap);
+  gap: 20px;
+  position: relative;
+  .content__doisoatve {
+    width: 69%;
+    padding: 25px;
+    background: #fff;
+    border-radius: 24px;
+
+    .content__searchButton {
+      &-search {
+        width: 50%;
+        padding: 5px 16px;
+        font-size: 16px;
+      }
+    }
+
+    .ant-table-cell {
+      padding: 16px 10px;
+    }
+
+    .ant-table-tbody {
+      .ant-table-cell {
+        padding: 10px;
+      }
+    }
+  }
+
+  .content__locve {
+    width: 29%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    table > thead {
+      tr {
+        margin: 10px 0;
+
+        &:first-child {
+          th {
+            text-align: left;
+          }
+        }
+        th {
+          display: flex;
+          font-weight: 600;
+          font-size: 15px;
+          margin: 15px 10px 15px 0;
+        }
+        td {
+          font-size: 15px;
+        }
+      }
+    }
+
+    &-button {
+      text-align: center;
+      margin-top: 30px;
+      button {
+        background: transparent;
+        border: 1px solid currentColor;
+        padding: 15px 50px;
+        border-radius: 8px;
+        color: $color-secondary;
+        font-weight: 700;
+      }
+    }
+  }
+}

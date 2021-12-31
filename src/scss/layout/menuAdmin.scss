@@ -1,0 +1,39 @@
+.menu {
+  padding-top: 50px;
+  width: 20%;
+  a {
+    color: $color-black-200;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    &-inner {
+      display: inline-block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 20px;
+      font-weight: 500;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all linear 0.2s;
+      .anticon {
+        margin-right: 10px;
+      }
+      &:hover {
+        background: $color-primary;
+        color: #fff;
+      }
+    }
+
+    &-child {
+      margin-left: 50px;
+    }
+  }
+  .active {
+    background: $color-primary;
+    color: #fff;
+  }
+}

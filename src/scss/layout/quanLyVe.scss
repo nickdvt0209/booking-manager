@@ -1,0 +1,100 @@
+.content {
+  width: 80%;
+  flex-grow: 1;
+  padding: 25px;
+  background: #fff;
+  border-radius: 24px;
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__searchButton {
+    margin-bottom: 30px;
+    @include flex(center, space-between, nowrap);
+
+    &-search {
+      @include flex(center, space-between, nowrap);
+      width: 350px;
+      padding: 10px 16px;
+      background: $color-gray-400;
+      border-radius: 8px;
+      input {
+        background: transparent;
+        flex-grow: 1;
+        padding-right: 15px;
+      }
+      .anticon-search {
+        font-size: 25px;
+      }
+    }
+
+    &-button {
+      @include flex(stretch, center, nowrap);
+      .ant-btn {
+        height: inherit;
+        line-height: 1;
+        &:active,
+        &:hover,
+        &:focus {
+          background: $color-secondary;
+          color: #fff;
+          border: 1px solid $color-secondary;
+        }
+      }
+      button {
+        padding: 10px 15px;
+        border: 1px solid $color-secondary;
+        border-radius: 6px;
+        margin-left: 20px;
+        background: transparent;
+        color: $color-secondary;
+        font-weight: 700;
+        font-size: 16px;
+        p {
+          margin: 0;
+        }
+        &:hover {
+          background: $color-secondary;
+          color: #fff;
+          border: 1px solid $color-secondary;
+        }
+      }
+    }
+  }
+
+  &__table {
+    &-table {
+      margin-bottom: 30px;
+      border-radius: 8px 8px 0 0;
+      overflow: hidden;
+
+      .ant-table-thead {
+        font-weight: 700 !important;
+        .ant-table-cell::before {
+          width: 0 !important;
+          height: 0 !important;
+        }
+
+        tr > th {
+          font-weight: 700;
+        }
+      }
+
+      .ant-table-tbody {
+        .ant-table-row:nth-child(even) {
+          background: #fafafa;
+        }
+      }
+    }
+    &-pagination {
+      text-align: center;
+
+      .ant-pagination-item {
+        a {
+          line-height: 2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.header {
+  @include flex(center, space-between, nowrap);
+  gap: 30px;
+  margin-bottom: 15px;
+
+  &__left {
+    width: 20%;
+    &-logo {
+      width: 133px;
+    }
+  }
+
+  &__list {
+    width: 80%;
+    flex-grow: 1;
+    @include flex(center, space-between, nowrap);
+  }
+
+  &__center-search {
+    width: 437px;
+    position: relative;
+    input {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 16px;
+      padding-right: 50px;
+      border-radius: 12px;
+      background: $color-gray-400;
+      font-size: 16px;
+      color: $color-black-200;
+    }
+    .anticon-search {
+      font-size: 24px;
+      position: absolute;
+      right: 3.3%;
+      bottom: 22%;
+    }
+  }
+
+  &__right {
+    @include flex(center, end, nowrap);
+    .anticon {
+      font-size: 20px;
+      &-bell {
+        margin: 0 30px;
+      }
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+}

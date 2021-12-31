@@ -1,0 +1,95 @@
+.modal-locve {
+  width: 634px !important;
+  color: $color-black-200 !important;
+
+  .ant-modal-content {
+    padding: 25px 30px;
+    background: #fff;
+    border-radius: 16px;
+
+    .ant-modal-header {
+      border-bottom: 0;
+
+      .ant-modal-title {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        color: $color-black-200;
+        margin-bottom: 15px;
+      }
+    }
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-modal-footer {
+      display: none;
+    }
+  }
+
+  &__content {
+    color: $color-black-200;
+    opacity: 80%;
+    font-weight: 600;
+    font-size: 16px;
+
+    &-time {
+      @include flex(center, flex-start, nowrap);
+      gap: 30px;
+      margin-bottom: 20px;
+      .time-start,
+      .time-end {
+        width: 50%;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-trangthai {
+      margin-bottom: 20px;
+      span {
+        display: block;
+      }
+      .select-trangthai {
+        margin-top: 15px;
+        font-weight: 500;
+      }
+    }
+
+    &-congcheckin {
+      .text {
+        display: block;
+        margin-bottom: 15px;
+      }
+      .check-all,
+      .check-list {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__calendar {
+    border-radius: 8px !important;
+    border: 1px solid $color-gray-500 !important;
+
+    .ant-picker-input {
+      .ant-picker-suffix {
+        color: $color-secondary;
+      }
+    }
+  }
+
+  &__button {
+    text-align: center;
+    margin-top: 20px;
+    button {
+      padding: 5px 50px;
+      color: $color-secondary;
+      font-size: 18px;
+      border-radius: 8px;
+      background: transparent;
+      border: 1px solid currentColor;
+      font-weight: 700;
+    }
+  }
+}

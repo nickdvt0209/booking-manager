@@ -1,0 +1,7 @@
+.homeAdmin {
+  padding: 17px 32px 30px 33px;
+  &__body {
+    @include flex(flex-start, space-between, nowrap);
+    gap: 30px;
+  }
+}

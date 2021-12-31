@@ -1,0 +1,12 @@
+.modal-capnhatgoive {
+  &__listinput {
+    @include flex(center, flex-start, nowrap);
+    gap: 30px;
+  }
+  &__iteminput {
+    width: 50%;
+    input {
+      width: 100%;
+    }
+  }
+}

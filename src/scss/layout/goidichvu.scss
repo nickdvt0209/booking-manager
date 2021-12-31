@@ -1,0 +1,33 @@
+.goidichvu {
+  height: 510px;
+  position: relative;
+  .content__table {
+    &-table {
+      .ant-table-content {
+        .ant-table-cell {
+          padding: 10px 5px;
+          font-size: 12px;
+          .anticon {
+            color: $color-secondary;
+            margin-right: 5px;
+          }
+
+          .btn-capnhat {
+            background: transparent;
+            border: none;
+            color: $color-secondary;
+            font-size: 12px;
+            outline: none;
+          }
+        }
+      }
+    }
+
+    &-pagination {
+      position: absolute;
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+}

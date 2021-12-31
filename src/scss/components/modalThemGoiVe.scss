@@ -1,0 +1,141 @@
+.modal-themgoive {
+  color: $color-black-200 !important;
+  width: 758px !important;
+  top: 30px !important;
+  .ant-modal-content {
+    padding: 25px 30px;
+    background: #fff;
+    border-radius: 16px;
+
+    .ant-modal-header {
+      border-bottom: 0;
+
+      .ant-modal-title {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        color: $color-black-200;
+        margin-bottom: 15px;
+      }
+    }
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-modal-footer {
+      display: none;
+    }
+  }
+
+  &__content {
+    p {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    &-input {
+      margin-bottom: 15px;
+      span {
+        color: red;
+        font-weight: 700;
+      }
+      input {
+        width: 50%;
+        border: 1px solid $color-gray-500;
+        padding: 5px 15px;
+        border-radius: 8px;
+      }
+    }
+
+    &-time {
+      @include flex(center, flex-start, nowrap);
+      margin-bottom: 15px;
+      gap: 50px;
+      .time-list {
+        .time-item {
+          @include flex(center, flex-start, nowrap);
+          gap: 10px;
+          &-calendar {
+            width: 50%;
+          }
+          .ant-input-group {
+            width: 50%;
+          }
+          &-hour {
+            padding: 8px;
+            width: 50%;
+            border: 1px solid $color-gray-500;
+            border-radius: 8px;
+            cursor: pointer;
+            @include flex(center, flex-start, nowrap);
+            input {
+              width: 90%;
+              padding-right: 10px;
+            }
+            .anticon-clock-circle {
+              color: $color-secondary;
+            }
+          }
+        }
+      }
+    }
+
+    &-giave {
+      margin-bottom: 5px;
+      .ant-checkbox-inner {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #2a8ae4;
+      }
+      &-list {
+        margin-bottom: 10px;
+        .checkbox {
+          margin-right: 10px;
+        }
+        input {
+          margin: 0 10px;
+          background: $color-gray-300;
+          border-radius: 8px;
+          border: none;
+          padding: 10px 12px;
+          width: 120px;
+        }
+      }
+    }
+
+    &-tinhtrang {
+      margin-bottom: 15px;
+      .tinhtrang-select {
+        .ant-select-selector {
+          height: inherit !important;
+          border: 1px solid $color-gray-500 !important;
+          border-radius: 8px !important;
+          padding: 5px 10px !important;
+        }
+        .ant-select-selection-item {
+          font-weight: 500 !important;
+          font-size: 15px;
+        }
+        .ant-select-arrow {
+          color: $color-secondary !important;
+        }
+      }
+    }
+  }
+
+  &__button {
+    text-align: center;
+    button {
+      margin: 0 10px;
+      border: 1px solid currentColor;
+      border-radius: 8px;
+      padding: 10px 50px;
+      background: transparent;
+      font-weight: 700;
+      color: $color-secondary;
+      &:last-child {
+        background: $color-secondary;
+        color: #fff;
+      }
+    }
+  }
+}
